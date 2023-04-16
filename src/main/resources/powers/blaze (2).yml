@@ -1,0 +1,39 @@
+Blaze:
+  colouredName: <bold><orange>Blaze
+  description: You have infinite fire res and can shoot fireballs
+  skills:
+  Fire Resistance:
+      skill: POTIONEFFECT
+      type: FIRE_RESISTANCE
+      potency: 1
+      fireballItem:
+      skill: GIVEITEM
+      canStore: false
+      canDrop: false
+      canLoseOnDeath: false
+      canDropOnDeath: false
+      loseItemOnHeroLoss: false
+      item:
+        type: BLAZE_POWDER
+        amount: 1
+        metadata:
+          displayName: <bold><Orange>Blaze </Black></bold><bold><gray>Fireball
+          isUnbreakable: true
+          lore:
+          - <italic><white>You can use this to throw blaze fireballs!
+    throwableFireballs:
+      skill: THROWER
+      item:
+        type: BLAZE_POWDER
+        amount: 1
+        metadata:
+          displayName: <bold><orange>Dragon </orange></bold><bold><gray>Fireball
+          isUnbreakable: true
+          lore:
+          - <italic><white>You can use this to throw fireballs!
+      ammoCost: 0
+      projectile: largefireball
+      cooldown: 30
+      cooldownMessage: '<bold><#110000>F</#110000><#150000>i</#150000><#1a0000>r</#1a0000><#1e0000>e</#1e0000><#220000>b</#220000><#260000>a</#260000><#2b0000>l</#2b0000><#2f0000>l</#2f0000><#330000>
+        </#330000></bold><white>Cooldown: <currentcooldown> seconds'
+      velocity: 0.5
